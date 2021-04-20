@@ -1,6 +1,7 @@
 module.exports = {
   title: '客服前端技术博客',
   description: '成为为自己感到骄傲的那个人吧',
+  dest: 'public',
   themeConfig: {
     // logo: '/app.png',
     nav: [
