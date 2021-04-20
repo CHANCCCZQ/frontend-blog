@@ -1,0 +1,17 @@
+{
+  "name": "frontend-blog",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "chenzhiqiang",
+  "license": "MIT",
+  "devDependencies": {
+    "@vuepress/plugin-active-header-links": "^1.8.2",
+    "@vuepress/plugin-back-to-top": "^1.8.2",
+    "@vuepress/plugin-nprogress": "^1.8.2",
+    "vuepress": "^1.8.2"
+  },
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  }
+}
