@@ -18,6 +18,7 @@ module.exports = {
         sidebarDepth: 1,    // 可选的, 默认值是 1
         children: [
           '/skill/crudPage',
+          '/skill/component',
           '/skill/standard',
           '/skill/interface'
         ]
