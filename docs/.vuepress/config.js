@@ -1,10 +1,12 @@
 module.exports = {
   title: '客服前端技术博客',
   description: '成为为自己感到骄傲的那个人吧',
-  dest: 'public',
+  base: '/documents/',
+  dest: 'dist',
   themeConfig: {
     // logo: '/app.png',
     nav: [
+      { text: '主页', link: '/' },
       { text: '技术', link: '/skill/' },
       { text: '业务', link: '/business/' },
       { text: 'VuePress', link: 'https://www.vuepress.cn' },

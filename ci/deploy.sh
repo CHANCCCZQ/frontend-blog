@@ -29,14 +29,6 @@ do
 done
 echo "----- 完成上传代码包 -----";
 
-# # 删除程序包以免缓存
-# if [ -f $APP_PACKAGE_DIR ]; then
-#   rm -rf $APP_PACKAGE_DIR;
-# fi
-
-if [[ $env = 'prod' ]]; then
-  exit;
-fi
 # 部署程序：登录远程服务器&部署服务
 for PORT in $SERVER_PORTS; do
 
@@ -58,20 +50,12 @@ function error_exit {
   exit 1;
 }
 
-
-
-
 # 创建APP目录&进入
-mkdir -p $SERVER_APP_PATH $SERVER_APP_PATH \
+mkdir -p $SERVER_APP_PATH \
   || error_exit "创建 SERVER_APP_PATH 失败";
 
 cd $SERVER_APP_PATH \
   || error_exit "进入 ${SERVER_APP_PATH}失败";
-
-# 移除旧代码
-if [ -f ./package.json ]; then
-  rm -rf ./* || error_exit "删除旧代码失败";
-fi
 
 # 部署新代码
 tar -z -x -f ${SERVER_APP_TMP_PACKAGE} --strip-components 2 \
