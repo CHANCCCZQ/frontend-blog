@@ -185,9 +185,9 @@ dialog 是比较复杂的一个弹窗，因为它有如下的逻辑
   formItems: [
     {
       prop: 'header',
-      label: '头部动态表单',
+      label: '头部动态表单', // 有title可以不要label
       title: '头部条件查询区域', // 如果是动态表单，可以加上title
-      dynamic: false, // 是否是动态表单，如果是，那么字段会变成{ header: [{}] }, 否则是{ header: {} }
+      dynamic: false, // 是否是动态表单，如果是，那么字段会变成{ header: [{}] }, 否则是{ header: {} }，默认是true
       children: [
         { // 更详细配置查看组件配置
           label: '选项',

@@ -1,6 +1,5 @@
 module.exports = {
   title: '客服前端技术博客',
-  description: '成为为自己感到骄傲的那个人吧',
   base: '/frontend-blog/',
   themeConfig: {
     // logo: '/app.png',
@@ -18,9 +17,10 @@ module.exports = {
         sidebarDepth: 1,    // 可选的, 默认值是 1
         children: [
           '/skill/crudPage',
-          '/skill/component',
-          '/skill/standard',
-          '/skill/interface'
+          '/skill/业务组件',
+          '/skill/前后端接口规范',
+          '/skill/微前端接入',
+          '/skill/后端接口地址'
         ]
       },
       {
@@ -30,6 +30,14 @@ module.exports = {
         sidebarDepth: 1,    // 可选的, 默认值是 1
         children: [
           // '/business/crudPage'
+        ]
+      },
+      {
+        title: '写作',   // 必要的
+        path: '/write/',      // 可选的, 标题的跳转链接，应为绝对路径且必须存在
+        sidebarDepth: 1,    // 可选的, 默认值是 1
+        children: [
+          '/write/关于写作'
         ]
       },
     ],
