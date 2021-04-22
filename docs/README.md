@@ -2,7 +2,7 @@
 home: true
 heroImage: /app.png
 heroText: 客服前端技术博客
-tagline: 希望您能为自己感到骄傲
+tagline: 记录所得
 actionText: 进入 →
 actionLink: /skill/
 features:
